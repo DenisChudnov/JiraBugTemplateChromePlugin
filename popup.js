@@ -9,11 +9,11 @@ function clickOnCreateButton() {
                 const description = description_field.querySelector('.ProseMirror');
                 const paragraph = description.querySelectorAll('p');
                 paragraph[0].parentNode.innerHTML="" +
-                    "<p><strong>ISSUE:</strong></p>" +
+                    "<p><strong>DESCRIPTION:</strong></p>" +
                     "<p><strong>STEPS TO REPRODUCE:</strong></p>\n" +
-                    "    <ul className=\"ak-ul\" data-indent-level=\"1\">\n" +
+                    "    <ol className=\"ak-ol\" data-indent-level=\"1\">\n" +
                     "        <li><p>Open …</p></li>\n" +
-                    "    </ul>" +
+                    "    </ol>" +
                     " <p><strong>ACTUAL RESULT:</strong></p>" +
                     "<p><strong>EXPECTED RESULT:</strong></p>";
                 issueTypeDropdownSelector.click();
@@ -34,11 +34,11 @@ function fillBugDescriptionWithTemplate() {
         const description = description_field.querySelector('.ProseMirror');
         const paragraph = description.querySelectorAll('p');
         paragraph[0].parentNode.innerHTML="" +
-            "<p><strong>ISSUE:</strong></p>" +
+            "<p><strong>DESCRIPTION:</strong></p>" +
             "<p><strong>STEPS TO REPRODUCE:</strong></p>\n" +
-            "    <ul className=\"ak-ul\" data-indent-level=\"1\">\n" +
+            "    <ol className=\"ak-ol\" data-indent-level=\"1\">\n" +
             "        <li><p>Open …</p></li>\n" +
-            "    </ul>" +
+            "    </ol>" +
             " <p><strong>ACTUAL RESULT:</strong></p>" +
             "<p><strong>EXPECTED RESULT:</strong></p>";
 }
